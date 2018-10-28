@@ -1,0 +1,53 @@
+# Play sounds when a player says a specific word in chat.
+# 
+# Tutorial:
+#
+# hi: = The word that when said, a sound will play.
+#   Cancellable: true = When another plugin cancelled AsyncPlayerChatEvent, the sound won't be played.
+#   Enabled: false = If you want to play a sound, change this to true.
+#   Highlight: = You can highlight o replace the word you specified.
+#     Enabled: false = Change this to true to activate highlight.
+#     Message: '<word>' = How the word will look like.
+#     Permission: 'permission.here' = The permission you need to highlight this word.
+#   Sounds:
+#     '0':
+#       Options:
+#         IgnoreToggle: false
+#         Location: DEFAULT
+#         PermissionListen: ''
+#         PermissionRequired: ''
+#         SoundPosition:
+#           Up: 0.0
+#           Down: 0.0
+#           Front: 0.0
+#           Back: 0.0
+#           Right: 0.0
+#           Left: 0.0
+#         Radius:
+#           CrossWorlds: true
+#           Range: -1.0
+#       Pitch: 0
+#       Sound: ENTITY_EXPERIENCE_0RB_PICKUP
+#       Volume: 10
+#
+# For more information, go to sounds.yml.
+# Here is a sample, remove the # to use it:
+
+#playmoresounds:
+#  Cancellable: false
+#  Enabled: false
+#  Highlight:
+#    Enabled: true
+#    Message: '&n&6<word>&r'
+#    Permission: 'playmoresounds'
+#  Sounds:
+#    '0':
+#      Options:
+#        IgnoreToggle: false
+#        Location: DEFAULT
+#        Radius:
+#          CrossWorlds: true
+#          Range: -1.0
+#      Pitch: 0
+#      Sound: ENTITY_EXPERIENCE_0RB_PICKUP
+#      Volume: 10

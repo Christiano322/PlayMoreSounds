@@ -1,0 +1,38 @@
+#####################################################################################################
+#  PerCommandSounds:
+#
+#  You can set sounds for specific commands. To see how to set a sound, please
+# go check Sounds.yml.
+#  If you set 'Enabled' to false, the command will not play the default
+# sound that is set on Sounds.yml.
+#
+#  I have set by default all this commands 'Enabled: false' so it don't play the
+# ENTITY_CHICKEN_EGG sound that is set by default on Sounds.yml
+#####################################################################################################
+
+/playmoresounds:
+  Enabled: false
+
+/pmoresounds:
+  Enabled: false
+
+/sounds:
+  Enabled: false
+
+/pms:
+  Enabled: false
+
+/playsound:
+  Enabled: false
+
+/gamemode:
+  Enabled: false
+
+/gm:
+  Enabled: false
+
+/tp:
+  Enabled: false
+
+/teleport:
+  Enabled: false

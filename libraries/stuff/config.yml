@@ -1,0 +1,144 @@
+#################################
+##  PlayMoreSounds Configuration
+##  v2.4.2.1
+#################################
+
+# Checks for updates.
+CheckForUpdates: true
+
+# Auto-Update the plugin when you check for updates on command "/playmoresounds update".
+CommandAutoUpdate: true
+
+# If you have an outdated configuration, the plugin will ask you to restore it.
+# (If is disabled, the plugin automatically restore your outdated configs.)
+ConfirmOutdatedFileRestoration: true
+
+# Shows debug messages to console.
+# (If you set as "developer", this will log and spam your console with all debugging tests.)
+DebugOutput: false
+
+# If a player has disabled his sounds and relogged, the sounds will be enabled.
+EnableSoundsAfterRelog: false
+
+# Extracts the language files into the plugin folder.
+ExtractLanguageFiles: true
+
+# Shows the help page based on player's permissions. 
+HelpBasedOnPermissions: true
+
+# This will hide radius sounds for players who have the following conditions:
+HideRadiusSoundsTo:
+  InvisibilityEffect:
+    Enabled: true
+    # Permission: playmoresounds.sounds.radius.hide.invisible
+    OnlyWithPermission: true
+  Gamemode:
+    Adventure: false
+    Creative: false
+    Spectator: true
+    Survival: false
+  # Hide the sound to players that can not see the sound maker. (Most used code for vanish plugins.)
+  IfCanNotSee: true
+
+# Settings of the '/pms list' command.
+ListCommand:
+  # The amount of sounds/instruments that should appear per page.
+  Amount: 12
+  # The color of each sound/instrument that is shown in the list.
+  Color: '&6'
+  # The secondary color of each sound/instrument that is shown in the list.
+  Color2: '&e'
+  # The separator that will be between each sound/instrument that is in the list.
+  Separator: '&7, '
+
+# The language of the plugin [en, br, es].
+Localization: en
+
+# Enable the configuration "chatwords.yml" to play a different sound to each word in chat.
+PerChatWordSounds:
+  Enabled: true
+
+# Enable the configuration "commands.yml" to play a different sound to each command.
+PerCommandSounds:
+  Enabled: true
+
+# Enable the configuration "gamemodes.yml" to play a different sound to each gamemode.
+PerGamemodeSounds:
+  Enabled: true
+
+# The volume and pitch that will be set if the player don't specify when
+# the command "/pms play" is sent.
+PlayCommandDefaultPitch: 1
+PlayCommandDefaultVolume: 10
+
+# The sound that will play when the config is reloaded.
+ReloadCommand:
+  Enabled: true
+  Sounds:
+    '0':
+      Options:
+        IgnoreToggle: false
+        Location: DEFAULT
+        Radius:
+          Range: 0.0
+      Pitch: 1
+      Sound: BLOCK_NOTE_BLOCK_HARP
+      Volume: 10
+
+# The regions that you can create to play a sound when you enter/exit it.
+SoundRegions:
+  WandTool:
+    Glowing: true
+    Material: STICK
+    Name: '&6&l&nSound Region Selector'
+
+# The sounds that will play when a player change his toggle-sounds status.
+ToggleCommand:
+  # Time in seconds of how long you should wait to toggle sounds again.
+  # Bypass permission: playmoresounds.toggle.bypasscooldown
+  Cooldown: 35s #h = hour, m = minute, s = seconds.
+  ToggleSounds:
+    ToggleEnabled:
+      Enabled: true
+      Sounds:
+        '0':
+          Options:
+            IgnoreToggle: true
+            Location: DEFAULT
+            Radius:
+              Range: 0.0
+          Pitch: 2
+          Sound: BLOCK_NOTE_BLOCK_PLING
+          Volume: 10
+    ToggleDisabled:
+      Enabled: true
+      Sounds:
+        '0':
+          Options:
+            IgnoreToggle: true
+            Location: DEFAULT
+            Radius:
+              Range: 0.0
+          Pitch: 1
+          Sound: BLOCK_NOTE_BLOCK_BASS
+          Volume: 10
+
+# Check for updates every X minutes.
+# If you disable "LogToConsole" the plugin will just inform you when an update is available.
+UpdateScheduler:
+  Enabled: true
+  # Time in minutes of how long the plugin will check for updates again.
+  Interval: 2h #h = hour, m = minute, s = seconds.
+  LogToConsole: false
+
+# Allows getListeners() of ReproduceSoundEvent to return the players that are listening to the sound.
+UseHardMethods: false
+
+# The worlds that will not play any sounds.
+# To use it, just remove the "#" hashtags.
+#World-BlackList:
+#- 'sample'
+#- 'sample_nether'
+
+# The version of your configuration. (To restore the old configurations)
+ConfigVersion: 2.4.2.1

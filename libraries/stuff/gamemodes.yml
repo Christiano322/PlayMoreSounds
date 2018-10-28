@@ -1,0 +1,63 @@
+#####################################################################################################
+#  PerGamemodeSounds:
+#
+#  You can set sounds for specific commands. To see how to set a sound, please
+# go check Sounds.yml.
+#  If you set 'Enabled' to false, the new gamemode will not play the default
+# sound that is set on Sounds.yml.
+#
+# Gamemodes - [ADVENTURE, CREATIVE, SPECTATOR, SURVIVAL] (Depending on your version)
+#####################################################################################################
+
+#If you want to work with this, here's an example:
+#ADVENTURE:
+#  Cancellable: true
+#  Enabled: false
+#  Sounds:
+#    '0':
+#      Options:
+#        IgnoreToggle: false
+#        Location: DEFAULT
+#        SoundPosition:
+#          Up: 5.0
+#          Back: 3.0
+#        Radius:
+#          Range: 0.0
+#      Pitch: 1
+#      Sound: BLOCK_PORTAL_TRAVEL
+#      Volume: 10
+#
+#CREATIVE:
+#  Cancellable: true
+#  Enabled: true
+#  Sounds:
+#    '0':
+#      Options:
+#        IgnoreToggle: false
+#        Location: DEFAULT
+#        Radius:
+#          Range: 0.0
+#      Pitch: 1
+#      Sound: ENTITY_WITHER_SPAWN
+#      Volume: 10
+#
+#SPECTATOR:
+#  Cancellable: true
+#  Enabled: false
+#
+#SURVIVAL:
+#  Cancellable: true
+#  Enabled: true
+#  Sounds:
+#    '0':
+#      Options:
+#        IgnoreToggle: false
+#        Location: DEFAULT
+#        SoundPosition:
+#          Front: 5.0
+#          Right: 5.0
+#        Radius:
+#          Range: 0.0
+#      Pitch: 1
+#      Sound: ENTITY_ZOMBIE_ATTACK_IRON_DOOR
+#      Volume: 10

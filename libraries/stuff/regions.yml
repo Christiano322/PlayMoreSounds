@@ -1,0 +1,173 @@
+#####################################################################################################
+# PerRegionSounds:
+#
+#RedProtect: = Name of the region plugin.
+#  example: = Name of the region.
+#    Enter: = When a player enter on region.
+#      Cancellable: true
+#      Enabled: true = If false, you will cancel the default sound set on sounds.yml from playing.
+#      Sounds:              To see more information, go to Sounds.yml
+#        '0':
+#          Options:
+#            IgnoreToggle: false
+#            Location: DEFAULT
+#            PermissionListen: ''
+#            PermissionRequired: ''
+#            SoundPosition:
+#              Up: 0
+#              Down: 0
+#              Front: 0
+#              Back: 0
+#              Right: 0
+#              Left: 0
+#            Radius:
+#              Range: 0.0
+#          Pitch: 1
+#          Sound: ENTITY_WITHER_SPAWN
+#          Volume: 10
+#    Leave: = When a player exit the region.
+#      Cancellable: true
+#      Enabled: true = If false, you will cancel the default sound set on sounds.yml from playing.
+#      Sounds:              To see more information, go to Sounds.yml
+#        '0':
+#          Options:
+#            IgnoreToggle: false
+#            Location: DEFAULT
+#            PermissionListen: ''
+#            PermissionRequired: ''
+#            SoundPosition:
+#              Up: 0
+#              Down: 0
+#              Front: 0
+#              Back: 0
+#              Right: 0
+#              Left: 0
+#            Radius:
+#              Range: 0.0
+#          Pitch: 1
+#          Sound: ENTITY_WITHER_SPAWN
+#          Volume: 10
+#
+#  If you set 'Enabled' to false, the region that the player entered/exited will not play any
+#sounds.
+#
+#  Plugins - [PlayMoreSounds, RedProtect]
+#####################################################################################################
+
+#If you want to work with this, remove the '#' hashtags from this sample config.
+
+#PlayMoreSounds:
+#  SoundRegion1:
+#    Enter:
+#      Enabled: true
+#      Cancellable: true
+#      Sounds:
+#        '0':
+#          Options:
+#            IgnoreToggle: false
+#            Location: DEFAULT
+#            Radius:
+#              Range: 0.0
+#            SoundPosition:
+#              Right: 6
+#          Pitch: 1
+#          Sound: ENTITY_WITHER_SPAWN
+#          Volume: 1
+#    Leave:
+#      Enabled: false
+#  NotePlingRegion:
+#    Enter:
+#      Enabled: true
+#      Cancellable: true
+#      Sounds:
+#        '0':
+#          Options:
+#            IgnoreToggle: false
+#            Location: DEFAULT
+#            PermissionListen: 'playmoresounds.region.notepling.listen'
+#            Radius:
+#              Range: 0.0
+#          Pitch: 1
+#          Sound: BLOCK_NOTE_BLOCK_PLING
+#          Volume: 10
+#        '0':
+#          Options:
+#            IgnoreToggle: false
+#            Location: DEFAULT
+#            PermissionListen: 'playmoresounds.region.notepling.listen'
+#            Radius:
+#              Range: 0.0
+#          Pitch: 1
+#          Sound: BLOCK_NOTE_BLOCK_PLING
+#          Volume: 10
+#
+#You don't need to add 'Leave' or 'Enter' if you don't want to.
+
+#RedProtect:
+#  spawn:
+#    Enter:
+#      Enabled: true
+#      Cancellable: true
+#      Sounds:
+#        '0':
+#          Options:
+#            IgnoreToggle: false
+#            Location: DEFAULT
+#            Radius:
+#              Range: 0.0
+#            SoundPosition:
+#              Down: 3
+#              Front: 1.2
+#          Pitch: 0
+#          Sound: Note.PIANO;12
+#          Volume: 0
+#        '10':
+#          Options:
+#            IgnoreToggle: false
+#            Location: DEFAULT
+#            Radius:
+#              Range: 0.0
+#          Pitch: 0
+#          Sound: Note.PIANO;24
+#          Volume: 0
+#    Leave:
+#      Enabled: true
+#      Cancellable: true
+#      Sounds:
+#        '0':
+#          Options:
+#            IgnoreToggle: false
+#            Location: DEFAULT
+#            Radius:
+#              Range: 6.0
+#            PermissionRequired: 'region.spawn.leave'
+#            PermissionListen: 'region.spawn.leave.listen'
+#            SoundPosition:
+#              Up: 7
+#              Left: 1.5
+#          Pitch: 0
+#          Sound: Note.PIANO;12
+#          Volume: 0
+#  mall:
+#    Enter:
+#      Cancellable: true
+#      Sounds:
+#        '0':
+#          Options:
+#            IgnoreToggle: false
+#            Location: EYE
+#            PermissionRequired: 'region.mall'
+#            Radius:
+#              Range: 0.0
+#          Pitch: 1
+#          Sound: BLOCK_NOTE_BLOCK_PLING
+#          Volume: 10
+#        '23':
+#          Options:
+#            IgnoreToggle: false
+#            Location: EYE
+#            Radius:
+#              Range: 0.0
+#          Pitch: 1
+#          Sound: BLOCK_NOTE_BLOCK_BASS
+#          Volume: 10

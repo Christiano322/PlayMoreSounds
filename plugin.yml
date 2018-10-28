@@ -1,0 +1,109 @@
+author: Christiano322
+description: Plays sounds at player events.
+main: br.net.christiano322.PlayMoreSounds.PMS
+name: PlayMoreSounds
+softdepend: [Essentials, Jobs, RedProtect, VanishNoPacket]
+url: https://spigotmc.org/resources/playmoresounds.37429/
+version: 2.4.2.1
+commands:
+  playmoresounds:
+    description: Main command for PlayMoreSounds.
+    aliases: [pmoresounds, pms, sounds]
+permissions:
+  playmoresounds.*:
+    default: op
+    description: Gives access to all PlayMoreSounds Features.
+    children:
+      playmoresounds.op: true
+  playmoresounds.admin:
+    default: false
+    description: Gives access to all PlayMoreSounds Admin permissions.
+    children:
+      playmoresounds.commands: true
+      playmoresounds.sounds: true
+      playmoresounds.sounds.radius.hide.invisible: true
+  playmoresounds.commands:
+    default: false
+    description: Gives access to all PlayMoreSounds Commands.
+    children:
+      playmoresounds.commandhelp: true
+      playmoresounds.confirm: true
+      playmoresounds.description: true
+      playmoresounds.help: true
+      playmoresounds.list: true
+      playmoresounds.play.others: true
+      playmoresounds.play: true
+      playmoresounds.regions: true
+      playmoresounds.reload: true
+      playmoresounds.restore: true
+      playmoresounds.toggle.bypasscooldown: true
+      playmoresounds.toggle.check.others: true
+      playmoresounds.toggle.check: true
+      playmoresounds.toggle.others: true
+      playmoresounds.toggle: true
+      playmoresounds.update: true
+      playmoresounds.update.joinmessage: true
+  playmoresounds.op:
+    default: false
+    description: Gives access to all PlayMoreSounds Features.
+    children:
+      playmoresounds.admin: true
+  playmoresounds.player:
+    default: true
+    description: Gives access to all PlayMoreSounds Recommended player permissions.
+    children:
+      playmoresounds.description: true
+      playmoresounds.help: true
+      playmoresounds.sounds: true
+      playmoresounds.toggle.check: true
+      playmoresounds.toggle: true
+  playmoresounds.region.*:
+    default: false
+    description: Gives access to all PlayMoreSounds region interactions.
+    children:
+      playmoresounds.regions: true
+  playmoresounds.regions:
+    default: false
+    description: Gives access to all PlayMoreSounds region interactions.
+    children:
+      playmoresounds.region.create: true
+      playmoresounds.region.delete: true
+      playmoresounds.region.rename: true
+      playmoresounds.region.set: true
+      playmoresounds.region.wand: true
+      playmoresounds.region.wand.select: true
+  playmoresounds.sound.*:
+    default: false
+    description: Gives access to all PlayMoreSounds Sounds.
+    children:
+      playmoresounds.sounds: true
+  playmoresounds.sounds:
+    default: false
+    description: Gives access to all PlayMoreSounds Sounds.
+    children:
+      playmoresounds.sound.arrowhit: true
+      playmoresounds.sound.bedenter: true
+      playmoresounds.sound.bedleave: true
+      playmoresounds.sound.changehotbar: true
+      playmoresounds.sound.changelevel: true
+      playmoresounds.sound.craftingextract: true
+      playmoresounds.sound.furnaceextract: true
+      playmoresounds.sound.gamemodechange: true
+      playmoresounds.sound.handhit: true
+      playmoresounds.sound.inventoryclick: true
+      playmoresounds.sound.joinserver.listen: true
+      playmoresounds.sound.joinserver: true
+      playmoresounds.sound.leaveserver.listen: true
+      playmoresounds.sound.leaveserver: true
+      playmoresounds.sound.playerachievement: true
+      playmoresounds.sound.playeradvancementdone: true
+      playmoresounds.sound.playerchat: true
+      playmoresounds.sound.playercommand: true
+      playmoresounds.sound.playerdeath: true
+      playmoresounds.sound.playerdrop: true
+      playmoresounds.sound.playerflight: true
+      playmoresounds.sound.playerflightstop: true
+      playmoresounds.sound.playerteleport: true
+      playmoresounds.sound.regionenter: true
+      playmoresounds.sound.regionleave: true
+      playmoresounds.sound.swordhit: true
